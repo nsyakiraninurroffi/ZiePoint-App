@@ -45,14 +45,14 @@
 <div align="center">
 
 ```
-  ╔══════════════════════════════════════════════════════════════════╗
-  ║                                                                  ║
-  ║   "Kenapa aplikasi manajemen sekolah selalu terasa               ║
-  ║    berat, jelek, dan membosankan?"                               ║
-  ║                                                                  ║
-  ║   ZiePoint adalah jawabannya.                                    ║
-  ║                                                                  ║
-  ╚══════════════════════════════════════════════════════════════════╝
+╔══════════════════════════════════════════════════════════════════╗
+║                                                                  ║
+║   "Kenapa aplikasi manajemen sekolah selalu terasa               ║
+║    berat, jelek, dan membosankan?"                               ║
+║                                                                  ║
+║   ZiePoint adalah jawabannya.                                    ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝
 ```
 
 </div>
@@ -74,22 +74,22 @@ Hanya pengalaman yang **smooth, professional, dan worth it.**
 <div align="center">
 
 ```
-  ╭─────────────────────────────────────────────────────────────────────╮
-  │                                                                      │
-  │   🔐  Smart Auth            Role-based login — Guru & Siswa         │
-  │   📋  Input Pelanggaran     Catat & kategorikan dengan presisi       │
-  │   🏆  Input Prestasi        Rayakan setiap pencapaian siswa          │
-  │   📊  Student Dashboard     Riwayat poin personal yang elegan        │
-  │   ⚡  Real-time Updates     Live clock · status koneksi · refresh    │
-  │   🌙  Glassmorphism UI      Deep purple + soft pink — cohesive       │
-  │   📱  Cross-platform        Web · Android · iOS dari satu codebase   │
-  │   🗃️  Offline First         Hive cache — tetap berfungsi tanpa net   │
-  │   🔒  Secure by Default     JWT · encrypted storage · route guard    │
-  │   🔄  Repository Pattern    Clean separation, easy to test & scale   │
-  │   🧪  Fully Tested          Unit test · widget test per layer        │
-  │   🚀  CI/CD Pipeline        Auto analyze · test · build · deploy     │
-  │                                                                      │
-  ╰─────────────────────────────────────────────────────────────────────╯
+╭─────────────────────────────────────────────────────────────────────╮
+│                                                                      │
+│   🔐  Smart Auth            Role-based login — Guru & Siswa         │
+│   📋  Input Pelanggaran     Catat & kategorikan dengan presisi       │
+│   🏆  Input Prestasi        Rayakan setiap pencapaian siswa          │
+│   📊  Student Dashboard     Riwayat poin personal yang elegan        │
+│   ⚡  Real-time Updates     Live clock · status koneksi · refresh    │
+│   🌙  Glassmorphism UI      Deep purple + soft pink — cohesive       │
+│   📱  Cross-platform        Web · Android · iOS dari satu codebase   │
+│   🗃️  Offline First         Hive cache — tetap berfungsi tanpa net   │
+│   🔒  Secure by Default     JWT · encrypted storage · route guard    │
+│   🔄  Repository Pattern    Clean separation, easy to test & scale   │
+│   🧪  Fully Tested          Unit test · widget test per layer        │
+│   🚀  CI/CD Pipeline        Auto analyze · test · build · deploy     │
+│                                                                      │
+╰─────────────────────────────────────────────────────────────────────╯
 ```
 
 </div>
@@ -246,63 +246,63 @@ ziepoint/
 │
 ├── 📁 lib/
 │   │
-│   ├── 📁 core/                           ← Fondasi seluruh aplikasi
-│   │   ├── dio_client.dart                ← Singleton Dio + auth interceptors
-│   │   ├── router.dart                    ← GoRouter + redirect guard by role
-│   │   ├── theme.dart                     ← Glassmorphism design system
-│   │   ├── validators.dart                ← Form validators (pesan Bahasa Indonesia)
-│   │   ├── app_logger.dart                ← Structured logger, silent on release
-│   │   ├── local_db.dart                  ← Hive init + box registry
-│   │   └── env.dart                       ← dart-define environment reader
+│   ├── 📁 core/                             ← Fondasi seluruh aplikasi
+│   │   ├── dio_client.dart                  ← Singleton Dio + auth interceptors
+│   │   ├── router.dart                      ← GoRouter + redirect guard by role
+│   │   ├── theme.dart                       ← Glassmorphism design system
+│   │   ├── validators.dart                  ← Form validators (pesan Bahasa Indonesia)
+│   │   ├── app_logger.dart                  ← Structured logger, silent on release
+│   │   ├── local_db.dart                    ← Hive init + box registry
+│   │   └── env.dart                         ← dart-define environment reader
 │   │
-│   ├── 📁 models/                         ← Data layer
-│   │   ├── user_model.dart                ← Auth user (HiveType: 2)
-│   │   ├── student_profile.dart           ← Student profile (HiveType: 0)
-│   │   ├── student_summary.dart           ← Lightweight dropdown model
-│   │   └── violation_record.dart          ← Catatan siswa (HiveType: 1)
+│   ├── 📁 models/                           ← Data layer
+│   │   ├── user_model.dart                  ← Auth user (HiveType: 2)
+│   │   ├── student_profile.dart             ← Student profile (HiveType: 0)
+│   │   ├── student_summary.dart             ← Lightweight dropdown model
+│   │   └── violation_record.dart            ← Catatan siswa (HiveType: 1)
 │   │
-│   ├── 📁 repositories/                   ← Abstract contracts + implementations
-│   │   ├── auth_repository.dart           ← Abstract: login · logout · currentUser
-│   │   ├── auth_repository_impl.dart      ← Delegates to AuthService + TokenManager
-│   │   ├── student_repository.dart        ← Abstract: profile · history · save
-│   │   └── student_repository_impl.dart   ← Cache-first strategy with Hive
+│   ├── 📁 repositories/                     ← Abstract contracts + implementations
+│   │   ├── auth_repository.dart             ← Abstract: login · logout · currentUser
+│   │   ├── auth_repository_impl.dart        ← Delegates to AuthService + TokenManager
+│   │   ├── student_repository.dart          ← Abstract: profile · history · save
+│   │   └── student_repository_impl.dart     ← Cache-first strategy with Hive
 │   │
-│   ├── 📁 services/                       ← Business services
-│   │   ├── auth_service.dart              ← Login/logout API calls
-│   │   ├── token_manager.dart             ← Memory + flutter_secure_storage
-│   │   ├── notification_service.dart      ← Glass SnackBar: success · error · info
-│   │   └── connectivity_service.dart      ← Real-time connection status stream
+│   ├── 📁 services/                         ← Business services
+│   │   ├── auth_service.dart                ← Login/logout API calls
+│   │   ├── token_manager.dart               ← Memory + flutter_secure_storage
+│   │   ├── notification_service.dart        ← Glass SnackBar: success · error · info
+│   │   └── connectivity_service.dart        ← Real-time connection status stream
 │   │
-│   ├── 📁 viewmodels/                     ← MVVM: logic layer
-│   │   ├── login_viewmodel.dart           ← Auth state + role toggle + error handling
+│   ├── 📁 viewmodels/                       ← MVVM: logic layer
+│   │   ├── login_viewmodel.dart             ← Auth state + role toggle + error handling
 │   │   ├── student_dashboard_viewmodel.dart ← Profile + history + pagination
-│   │   └── teacher_input_viewmodel.dart   ← Form state + save + feedback
+│   │   └── teacher_input_viewmodel.dart     ← Form state + save + feedback
 │   │
-│   ├── 📁 screens/                        ← UI layer
-│   │   ├── login_page.dart                ← Immersive glassmorphism login
-│   │   ├── student_dashboard.dart         ← Personal dashboard + point history
-│   │   └── teacher_input_page.dart        ← Violation & achievement input form
+│   ├── 📁 screens/                          ← UI layer
+│   │   ├── login_page.dart                  ← Immersive glassmorphism login
+│   │   ├── student_dashboard.dart           ← Personal dashboard + point history
+│   │   └── teacher_input_page.dart          ← Violation & achievement input form
 │   │
-│   ├── 📁 widgets/                        ← Reusable components
-│   │   ├── glass_card.dart                ← BackdropFilter glass card
-│   │   ├── glass_dropdown.dart            ← Custom animated glass dropdown
-│   │   ├── glass_snackbar.dart            ← Themed notification toast
-│   │   ├── skeleton_card.dart             ← Shimmer loading placeholders
-│   │   ├── empty_state.dart               ← No-data state widget
-│   │   ├── error_state.dart               ← Error + retry button widget
-│   │   └── connection_indicator.dart      ← Live connection status dot
+│   ├── 📁 widgets/                          ← Reusable components
+│   │   ├── glass_card.dart                  ← BackdropFilter glass card
+│   │   ├── glass_dropdown.dart              ← Custom animated glass dropdown
+│   │   ├── glass_snackbar.dart              ← Themed notification toast
+│   │   ├── skeleton_card.dart               ← Shimmer loading placeholders
+│   │   ├── empty_state.dart                 ← No-data state widget
+│   │   ├── error_state.dart                 ← Error + retry button widget
+│   │   └── connection_indicator.dart        ← Live connection status dot
 │   │
-│   └── main.dart                          ← Entry · MultiProvider · Hive · GoRouter
+│   └── main.dart                            ← Entry · MultiProvider · Hive · GoRouter
 │
 ├── 📁 backend/
 │   ├── 📁 routes/
-│   │   ├── login.js                       ← POST /api/login/guru & /siswa
-│   │   ├── students.js                    ← GET student list & profile
-│   │   └── records.js                     ← POST/GET violations & achievements
+│   │   ├── login.js                         ← POST /api/login/guru & /siswa
+│   │   ├── students.js                      ← GET student list & profile
+│   │   └── records.js                       ← POST/GET violations & achievements
 │   ├── 📁 middleware/
-│   │   └── auth.js                        ← JWT verification middleware
-│   ├── db.js                              ← MySQL connection pool
-│   └── server.js                          ← Express entry point
+│   │   └── auth.js                          ← JWT verification middleware
+│   ├── db.js                                ← MySQL connection pool
+│   └── server.js                            ← Express entry point
 │
 ├── 📁 test/
 │   ├── 📁 viewmodels/
@@ -315,10 +315,10 @@ ziepoint/
 │
 ├── 📁 .github/
 │   └── 📁 workflows/
-│       └── ci.yml                         ← Analyze → Test → Build → Upload APK
+│       └── ci.yml                           ← Analyze → Test → Build → Upload APK
 │
-├── .env.dev                               ← Dev environment (git ignored)
-├── .env.prod                              ← Prod environment (git ignored)
+├── .env.dev                                 ← Dev environment (git ignored)
+├── .env.prod                                ← Prod environment (git ignored)
 ├── .gitignore
 ├── pubspec.yaml
 └── README.md
@@ -329,25 +329,25 @@ ziepoint/
 **Alur Arsitektur**
 
 ```
-  ╭──────────────────────────────────────────────────────────────╮
-  │                                                               │
-  │    Screens  ──── watch / call ────►  ViewModels              │
-  │                                          │                   │
-  │                                    depends on                │
-  │                                          ▼                   │
-  │                                    Repositories              │
-  │                                   (abstract layer)           │
-  │                                          │                   │
-  │                            ╭─────────────┴─────────────╮    │
-  │                            ▼                           ▼    │
-  │                       Hive Cache                  Dio Client │
-  │                      (Local DB)               (REST API)     │
-  │                            │                           │    │
-  │                            ╰─────────────┬─────────────╯    │
-  │                                          ▼                   │
-  │                                   MySQL Database             │
-  │                                                               │
-  ╰──────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────────────────╮
+│                                                              │
+│   Screens  ──── watch / call ────►  ViewModels              │
+│                                          │                  │
+│                                    depends on               │
+│                                          ▼                  │
+│                                    Repositories             │
+│                                   (abstract layer)          │
+│                                          │                  │
+│                            ╭─────────────┴────────────╮    │
+│                            ▼                          ▼    │
+│                       Hive Cache               Dio Client  │
+│                       (Local DB)              (REST API)   │
+│                            │                          │    │
+│                            ╰─────────────┬────────────╯    │
+│                                          ▼                  │
+│                                   MySQL Database            │
+│                                                              │
+╰──────────────────────────────────────────────────────────────╯
 ```
 
 <br/>
@@ -374,7 +374,7 @@ git push origin feat/nama-fiturmu
 
 <div align="center">
 
-| Prefix | Kapan digunakan |
+| Prefix | Kapan Digunakan |
 |:-------|:----------------|
 | `feat:` | Fitur baru |
 | `fix:` | Perbaikan bug |
@@ -407,14 +407,14 @@ Lihat [LICENSE](LICENSE) untuk detail lengkap.
 <br/>
 
 ```
-╔════════════════════════════════════════════════╗
-  ║                                                ║
-  ║   Flutter · Node.js · MySQL                    ║
-  ║   Crafted with precision. Shipped with pride.  ║
-  ║                                                ║
-  ║   Indonesia  🇮🇩  · MIT License · 2025         ║
-  ║                                                ║
-  ╚════════════════════════════════════════════════╝
+╔══════════════════════════════════════════════════╗
+║                                                  ║
+║   Flutter · Node.js · MySQL                      ║
+║   Crafted with precision. Shipped with pride.    ║
+║                                                  ║
+║   Indonesia 🇮🇩 · MIT License · 2025             ║
+║                                                  ║
+╚══════════════════════════════════════════════════╝
 ```
 
 <br/>
