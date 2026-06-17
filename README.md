@@ -412,7 +412,7 @@ Lihat [LICENSE](LICENSE) untuk detail lengkap.
 ║   Flutter · Node.js · MySQL                      ║
 ║   Crafted with precision. Shipped with pride.    ║
 ║                                                  ║
-║   Indonesia 🇮🇩 · MIT License · 2025             ║
+║   Indonesia 🇮🇩 · MIT License · 2026              ║
 ║                                                  ║
 ╚══════════════════════════════════════════════════╝
 ```
@@ -421,6 +421,6 @@ Lihat [LICENSE](LICENSE) untuk detail lengkap.
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=140&section=footer&fontColor=ffffff&animation=twinkling" width="100%"/>
 
-<sub>© 2025 ZiePoint · Built different. Built better. · All rights reserved.</sub>
+<sub>© 2026 ZiePoint · Built different. Built better. · All rights reserved.</sub>
 
 </div>
