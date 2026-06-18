@@ -1,21 +1,3 @@
-<<<<<<< HEAD
-# project_siswa_flutter
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=280&section=header&text=ZiePoint&fontSize=100&fontColor=ffffff&fontAlignY=40&desc=✦%20School%20Management%20Reimagined%20✦&descAlignY=60&descSize=16&descColor=fce7ff&animation=twinkling" width="100%"/>
@@ -442,4 +424,3 @@ Lihat [LICENSE](LICENSE) untuk detail lengkap.
 <sub>© 2026 ZiePoint · Built different. Built better. · All rights reserved.</sub>
 
 </div>
->>>>>>> d6d94171db1d379abeeed36c5f6980ac6e9f4b60
